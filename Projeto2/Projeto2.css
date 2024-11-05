@@ -1,0 +1,179 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/octicons/2.1.2/octicons.min.css");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700");
+
+body {
+    font-family: "Lato";
+    font-size: 16px;
+    background: #171a1e;
+    color: #aab2bd;
+    padding: 1em 0;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+fieldset {
+    margin: 1em auto;
+    padding: 2em;
+    width: 22em;
+    position: relative;
+    border-radius: 2px;
+    border-color: #2d333b;
+    background: #1b1f24;
+    box-shadow: 0 2px 2px #131518;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.05); 
+    color: #d1d5db;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    margin-bottom: 20px; 
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    width: 100%;
+    text-align: center;
+}
+
+
+input, input + label > i {
+    border-radius: 3px;
+    box-shadow: none;
+    border: 1px solid #384049;
+    background: #15171b;
+    display: block;
+    width: 100%;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input[type="password"],
+.password-container input[type="text"] {
+    width: 100%;
+    padding-right: 30px; 
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #aab2bd; 
+}
+
+input[type=text], input[type=password] {
+    font-size: 1.2em;
+    line-height: 1;
+    padding: 0.3em 0.4em;
+    margin: 0 0.5em 1em 0;
+}
+
+input[type=text]::-webkit-input-placeholder,
+input[type=password]::-webkit-input-placeholder {
+    color: #343b44;
+    line-height: 1.2;
+    transition: all 0.2s ease;
+}
+
+input[type=text]:hover, input[type=password]:hover {
+    border-color: #4e5966;
+}
+
+input[type=text].error, input[type=password].error {
+    border-color: #d84966;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    outline: none;
+    border-color: #39a086;
+}
+
+input[type=checkbox] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 1em;
+    height: 1em;
+    border: 1px solid #4e5966;
+    background: #1b1f24;
+    border-radius: 3px;
+    margin-right: 0.5em;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+input[type=checkbox]:checked {
+    background-color: #39a086;
+    border-color: #39a086;
+}
+
+input[type=checkbox]:checked::before {
+    content: '✔';
+    color: white;
+    font-size: 0.8em;
+    position: absolute;
+    top: -2px;
+    left: 2px;
+}
+
+input[type=checkbox] + label {
+    color: rgba(170, 178, 189, 0.7);
+    cursor: pointer;
+    font-size: 1em;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 1;
+}
+
+input[type=checkbox]:focus {
+    outline: none;
+}
+
+.signin {
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #24d6a6;
+    border: 1px solid transparent;
+    color: #171a1e;
+    padding: 0.5em 2em;
+    margin: 2em 0 0;
+    vertical-align: middle;
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    opacity: 0.8;
+    transition: all 0.2s ease;
+}
+
+.signin:hover {
+    opacity: 1;
+}
+
+.vhide {
+    opacity: 0;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
